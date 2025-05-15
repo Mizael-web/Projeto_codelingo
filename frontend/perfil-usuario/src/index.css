@@ -1,7 +1,42 @@
 
-/* Reset básico */
-* {
+:root {
+  /* Cores */
+  --cor-verde: #3A8D57;           /* Verde */
+  --cor-azul-escuro: #2E3A47;     /* Azul Escuro */
+  --cor-branca: #FFFFFF;          /* Branco */
+  --cor-cinza-claro: #6D6D6D;     /* Cinza Claro */
+  
+
+  /* Tipografia */
+  --fonte-titulo-principal: 'Montserrat', sans-serif; /* Fonte para títulos */
+  --fonte-corpo-texto: 'Roboto', sans-serif;          /* Fonte para corpo de texto */
+
+  /* Tamanhos de fonte */
+  --tamanho-titulo-principal: 2.5rem;   /* 40px (Tamanho ajustado para h1) */
+  --tamanho-subtitulo: 2rem;           /* 32px (Tamanho ajustado para h2) */
+  --tamanho-texto: 1rem;               /* 16px (Corpo de texto) */
+  --tamanho-link: 1rem;                /* 16px (Links) */
+  
+  /* Espaçamentos */
+  --espaco-padrao: 1.25rem;           /* 20px */
+  
+  /* Botões */
+  --padding-botao-altura: 1.25rem;    /* 20px */
+  --padding-botao-largura: 2.5rem;    /* 40px */
+  
+  /* Outros */
+  --espaco-minimo-logo: 1.5rem;       /* Espaçamento mínimo ao redor do logotipo */
+}
+
+*{
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+body{
   margin: 0;
   padding: 0;
+  font-family: var(--fonte-corpo-texto);
+
 }

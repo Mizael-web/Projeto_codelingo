@@ -1,7 +1,7 @@
 // controllers/userController.js
 const User = require('../models/user');
 
-exports.createUser = async (req, res, next) => {
+exports.createUser = async (req, res) => {
   try {
     const { nome, email } = req.body;
     const user = await User.create({ nome, email });

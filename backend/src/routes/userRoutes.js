@@ -1,17 +1,8 @@
-// models/user.js
-const { DataTypes } = require('sequelize');
-const sequelize = require('../../config/database');
 
-const User = sequelize.define('User', {
-  nome: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  email: {
-    type: DataTypes.STRING,
-    unique: true,
-    allowNull: false,
-  },
-});
+// userRoutes.js
+const express = require('express');
+const router = express.Router();
+const { createUser } = require('../controllers/userController');
 
-module.exports = User;
+router.post('/', createUser);
+module.exports = router;
